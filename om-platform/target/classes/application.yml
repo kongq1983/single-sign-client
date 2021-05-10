@@ -1,0 +1,28 @@
+
+spring:
+  application:
+      name: platform
+
+
+
+
+server:
+  port: 10000
+  servlet:
+    context-path: /platform
+
+
+unified:
+  certification:
+    appId: 0d017ef3cde94048a94163afcdf378be
+    appSecret: d5f93681306b4ac4bd3bcb9d62548f1d
+    portal: # 统一门户
+      url: http://172.16.4.106:19999/login
+    ca: # 认证中心
+      url: http://172.16.4.106:16000
+
+
+login:
+  url: http://172.16.69.41:10000/platform/login
+
+

@@ -1,0 +1,10 @@
+自己的单点登录
+
+# 跳转 http://172.16.69.41:10000/platform/login
+http://172.16.4.106:19999/login?oauthClientId=${appId}&redirectUrl=${redirectUrl}
+
+# 获取token
+http://172.16.4.106:16000/uias/token?code=${code}&clientId=${appId}&clientSecret=${appSecret}
+
+# 验证token
+http://172.16.4.106:16000/uias/token/result?token=${token}
